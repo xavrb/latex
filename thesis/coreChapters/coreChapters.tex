@@ -1,0 +1,259 @@
+\chapter{Core Chapters}
+
+The structure of your thesis is up to you and your supervisor. Whatever you
+do, do not consider the guidelines below as dogmas.
+
+\section{Classic structure}
+
+\begin{description}
+  \item[Problem statement and motivation.]
+  You describe in detail what problem the research is addressing, and what is
+the motivation to address this problem. There is a concise and objective
+statement of the research questions, hypotheses and goals. It is made clear
+why these questions and goals are important and relevant to the world outside
+the university (assuming it exists). You can already split the main research
+question into subquestions in this chapter. This section also describes an
+analysis of the problem: where does it occur and how, how often, and what are
+the consequences? An important part is also to scope the research: what
+aspects are included and what aspects are deliberately left out, and why?
+  \item[Research method.]
+  Here you describe the methods used to answer the research questions. A good
+structure of this section often follows the subquestions by providing a method
+for each. The research method needs a thorough motivation grounded in theory
+in order to be acceptable. As a part of the method, you can introduce a number
+of hypotheses --- these will be tested by the research, using the methods
+described here. An important part of this section is validation. How will you
+evaluate and validate the outcomes of the research?
+  \item[Background and context.]
+  This chapter contains all the information needed to put the thesis into
+context. It is common to use a revised version of your literature survey for
+this purpose. It is important to explicitly refer from your text to sources
+you have used, they will be listed in your bibliography. For example, you can
+write ``A small number of programming languages account for most language
+use~\cite{MeyerovichR2013}'', where the following entry would be included in
+your bibliography:
+\begin{quote}
+\cite{MeyerovichR2013} Leo A. Meyerovich and Ariel S. Rabkin. Empirical Analysis of Programming Language Adoption. In \emph{Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages and Applications}, OOPSLA, pages 1--18. ACM, 2013. \doi{10.1145/2509136.2509515}.
+\end{quote}
+Have a look at \autoref{sec:biblio} to learn more about citation.
+  \item[Research.]
+  This chapter reports on the execution of the research method as described in
+an earlier chapter. If the research has been divided into phases, they are
+introduced, reported on and concluded individually. If needed, this chapter
+could be split up to balance out the sizes of all chapters.
+  \item[Results.]
+  This chapter presents and clarifies the results obtained during the
+  research. The focus should be on the factual results, not the interpretation
+  or discussion. Tables and graphics should be used to increase the clarity of
+  the results where applicable.
+  \item[Analysis and conclusions.]
+  This chapter contains the analysis and interpretation of the results. The
+  research questions are answered as best as possible with the results that
+  were obtained. The analysis also discussed parts of the questions that were
+  left unanswered.
+
+  An important topic is the validity of the results. What methods of
+  validation were used? Could the results be generalised to other cases? What
+  threats to validity can be identified? There is room here to discuss the
+  results of related scientific literature here as well. How do the results
+  obtained here relate to other work, and what consequences are there? Did
+  your approach work better or worse? Did you learn anything new compared to
+  the already existing body of knowledge? Finally, what could you say in
+  hindsight on the research approach by followed? What could have done better?
+  What lessons have been learned? What could other researchers use from your
+  experience? A separate section should be devoted to ``future work'', i.e.,
+  possible extension points of your work that you have identified. Even other
+  researchers should be able to use those as a starting point.
+\end{description}
+
+\section{Reporting on replications}
+
+Here are the guidelines to report on replicated studies~\cite{Carver10}:
+
+\begin{description}
+  \item[Information about the original study]~\\
+    \begin{description}
+    \item[Research question(s)] that were the basis for the design
+    \item[Participants,] their number and any other relevant characteristics
+    \item[Design] as a graphical or textual description of the experimental design
+    \item[Artefacts,] the description of them and/or links to the artefacts used
+    \item[Context variables] as any important details that affected the design of the study or interpretation of the 
+results
+    \item[Summary of the results] in a brief overview of the major findings
+    \end{description}
+  %
+  \item[Information about the replication]~\\
+    \begin{description}
+    \item[Motivation for conducting the replication] as a 
+description of why the replication was conducted: 
+to validate the results, to broaden the results by 
+changing the participant pool or the artifacts. 
+    \item[Level of interaction with original experimenters.]
+The level of interaction between the original experimenters and the
+replicators should be reported. This interaction could range from none (i.e.
+simply read the  paper) to them being the same people. There is quite a lot of
+discussion of the level of interaction allowed for the replication to be
+``successful'', but this level should be reported even without  addressing
+the controversy.
+    \item[Changes to the original experiment.] Any changes made to the
+design, participants, artifacts, procedures, data collected and/or analysis
+techniques should be  discussed along with the motivation for the change.
+    \end{description}
+  \item[Comparison of results to original]~\\
+    \begin{description}
+    \item[Consistent results,] when replication results supported 
+results from the original study, and 
+    \item[Differences in results,] when results from the replication 
+did not coincide with the results from the original study. 
+Authors should also discuss how changes made to the 
+experimental design (see above) may have caused 
+these differences. 
+    \end{description}
+    \item[Drawing conclusions across studies]
+\end{description}
+
+NB: this section contains portions of text repeated directly from Carver~\cite{Carver10} and 
+only slightly massaged. Do not do this for your thesis, write your own thoughts down.
+
+\section{\LaTeX\ details}
+
+\subsection{Environments}
+
+A \LaTeX\ environment is something with opening and closing tags, which look
+like \cmd{begin}\{\texttt{name}\} and \cmd{end}\{\texttt{name}\}. Some useful
+environments to know:
+
+\begin{center}
+\begin{tabular}{ll}
+  \texttt{itemize}      & bullet lists\\
+  \texttt{enumerate}    & numbered lists\\
+  \texttt{description}  & definition lists\\
+  \hline
+  \texttt{center}       & centered line elements\\
+  \texttt{flushright}   & right aligned lines\\
+  \texttt{flushleft}    & left aligned lines\\
+  \hline
+  \texttt{tabular}      & table\\
+  \texttt{longtable}    & multi-page table (needs the \texttt{longtable} package)\\
+  \texttt{sideways}     & rotates some text\\
+  \texttt{quote}        & block quote\\
+  \texttt{verbatim}     & unformatted text\\
+  \texttt{minipage}     & compound box with elements inside\\
+  \texttt{boxedminipage}& compound box with elements inside and a border around it\\
+  \hline
+  \texttt{table}        & floating table (needs to have \texttt{tabular} nested inside)\\
+  \texttt{figure}       & floating figure\\
+  \texttt{sourcecode}   & floating listing\\
+  \hline
+  \texttt{equation}     & mathematical equation\\
+  \texttt{lstlisting}   & pretty-printed syntax highligted listing\\
+  \texttt{multline}     & mathematical equation spanning over multiple lines\\
+  \texttt{eqnarray}     & system of mathematical equations\\
+  \texttt{gather}       & bundled mathematical equations\\
+  \texttt{align}        & bundled and aligned mathematical equations\\
+  \texttt{array}        & matrix\\
+  \texttt{CD}           & commutative diagrams\\
+\end{tabular}
+\end{center}
+
+\section{Listings}
+
+\begin{sourcecode}
+\begin{lstlisting}[language=prolog]
+define(Ps1,G1,G2)
+ :-
+    usedNs(G1,Uses),
+    ps2n(Ps1,N),
+    require(
+      member(N,Uses),
+      'Nonterminal ~q must not be fresh.',
+      [N]),
+    new(Ps1,N,G1,G2),
+    !.
+\end{lstlisting}
+\caption{Code in Prolog}
+\end{sourcecode}
+
+\begin{sourcecode}
+\begin{lstlisting}[language=sdf]
+module Syntax
+
+imports Numbers
+imports basic/Whitespace
+
+exports
+  sorts
+    Program Function Expr Ops Name Newline
+
+  context-free syntax
+    Function+                          -> Program
+    Name Name+ "=" Expr Newline+       -> Function
+    Expr Ops Expr                      -> Expr      {left,prefer,cons(binary)}
+    Name Expr+                         -> Expr      {avoid,cons(apply)}
+    "if" Expr "then" Expr "else" Expr  -> Expr      {cons(ifThenElse)}
+    "(" Expr ")"                       -> Expr      {bracket}
+    Name                               -> Expr      {cons(argument)}
+    Int                                -> Expr      {cons(literal)}
+    "-"                                -> Ops       {cons(minus)}
+    "+"                                -> Ops       {cons(plus)}
+    "=="                               -> Ops       {cons(equal)}
+\end{lstlisting}
+\caption{Code in SDF}
+\end{sourcecode}
+
+\begin{sourcecode}
+\begin{lstlisting}[language=Java]
+import types.*;
+import org.antlr.runtime.*;
+
+public class TestEvaluator 
+    public static void main(String[] args) throws Exception {
+
+        // Parse file to program
+        ANTLRFileStream input = new ANTLRFileStream(args[0]);
+        FLLexer lexer = new FLLexer(input);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        FLParser parser = new FLParser(tokens);
+        Program program = parser.program();
+
+        // Parse sample expression
+        input = new ANTLRFileStream(args[1]);
+        lexer = new FLLexer(input);
+        tokens = new CommonTokenStream(lexer);
+        parser = new FLParser(tokens);
+        Expr expr = parser.expr();
+
+        // Evaluate program
+        Evaluator eval = new Evaluator(program);
+        int expected = Integer.parseInt(args[2]);
+\end{lstlisting}
+\caption{Code in Java}
+\end{sourcecode}
+
+\begin{sourcecode}
+\begin{lstlisting}[style=mono,language=Python]
+#!/usr/local/bin/python
+# wiki: BGF
+import os
+import sys
+import slpsns
+import elementtree.ElementTree as ET
+
+# root::nonterminal* production*
+class Grammar:
+  def __init__(self):
+    self.roots = []
+    self.prods = []
+  def parse(self,fname):
+    self.roots = []
+    self.prods = []
+    self.xml = ET.parse(fname)
+    for e in self.xml.findall('root'):
+      self.roots.append(e.text)
+    for e in self.xml.findall(slpsns.bgf_('production')):
+      prod = Production()
+      prod.parse(e)
+      self.prods.append(prod)
+\end{lstlisting}
+\caption{Code in Python}
+\end{sourcecode}
